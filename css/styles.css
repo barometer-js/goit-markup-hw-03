@@ -94,7 +94,7 @@ body {
   height: 80px;
   padding-top: 24px;
   padding-bottom: 24px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-container {
@@ -398,6 +398,6 @@ body {
 
 .gallery-list-content {
   padding: 20px 24px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
 }
 /* ============= PORTFOLIO GALLERY END ============= */
