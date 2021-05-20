@@ -87,11 +87,30 @@ body {
 .current {
   color: var(--accent-color);
 }
+
+.vertical-padding-button {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  outline: 0;
+  outline-offset: 0;
+}
 /* ============= COMPONENTS END ============= */
 
 /* ============= HEADER ============= */
 .header {
-  height: 80px;
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #ececec;
@@ -156,8 +175,6 @@ body {
   background-color: var(--hero-background-color);
   text-align: center;
   margin: 0 auto;
-  /* padding-top: 200px;
-  padding-bottom: 200px; */
   padding: 200px 0;
 }
 
@@ -188,9 +205,6 @@ body {
 /* ============= HERO END ============= */
 
 /* ============= ADVANTAGE ============= */
-/* .advantage {
-  padding: 94px 0;
-} */
 
 .advantage-list {
   display: flex;
@@ -202,6 +216,7 @@ body {
 }
 
 .advantage-list-title {
+  width: 270px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -239,7 +254,7 @@ body {
 }
 
 .occupations-list-item {
-  flex-basis: calc ((100% - 3 * 30px) / 3);
+  flex-basis: calc((100% - 3 * 30px) / 3);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -269,15 +284,17 @@ body {
 
 .team-list-item {
   background-color: var(--team-list-item-background-color);
-  padding-bottom: 30px;
-  flex-basis: calc ((100% - 4 * 30px) / 4);
+  flex-basis: calc((100% - 4 * 30px) / 4);
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.team-list-item-img {
-  margin-bottom: 30px;
+.team-list-item-container {
+  padding: 30px;
 }
+
+/* .team-list-item-img {
+} */
 
 .team-list-item-title {
   font-weight: 500;
@@ -292,6 +309,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  margin-bottom: 0;
 }
 /* ============= TEAM END ============= */
 
@@ -376,7 +394,7 @@ body {
 }
 
 .gallery-list-item {
-  flex-basis: calc ((100% - 3 * 30px) / 3);
+  flex-basis: calc((100% - 3 * 30px) / 3);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -399,5 +417,6 @@ body {
 .gallery-list-content {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+  border-top: 0px;
 }
 /* ============= PORTFOLIO GALLERY END ============= */
